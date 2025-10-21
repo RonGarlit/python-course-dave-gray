@@ -2,6 +2,7 @@
 
 ### Full Course - 23 Chapters
 
+[Python for Beginners Video Link](https://www.youtube.com/watch?v=H2EJuAcrZYU&t=2054s)
 ---
 
 ### Author Links
@@ -40,11 +41,13 @@
 ---
 
 ### ⚙ Free Python Tools
+
 - 🔗 [Python](https://www.python.org/)
 - 🔗 [Visual Studio Code (aka VS Code)](https://code.visualstudio.com/)
 - 🔗 [Python VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 ### 📚 References
+
 - 🔗 [Python Official Site](https://www.python.org/)
 - 🔗 [Python Standard Library](https://docs.python.org/3/library/index.html)
 - 🔗 [Python Package Index](https://pypi.org/)
