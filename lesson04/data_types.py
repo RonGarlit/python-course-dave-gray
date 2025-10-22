@@ -1,4 +1,5 @@
 import math
+
 # String data type
 
 # literal assignment
@@ -32,17 +33,17 @@ statement = "I like rock music from the " + decade + "s."
 print(statement)
 
 # Multiple lines
-multiline = '''
+multiline = """
 Hey, how are you?                                   
 
 I was just checking in.    
                                 All good?
 
-'''
+"""
 print(multiline)
 
 # Escaping special characters
-sentence = 'I\'m back at work!\tHey!\n\nWhere\'s this at\\located?'
+sentence = "I'm back at work!\tHey!\n\nWhere's this at\\located?"
 print(sentence)
 
 # String Methods
@@ -107,7 +108,7 @@ y = float(1.14)
 print(type(gpa))
 
 # complex type
-comp_value = 5+3j
+comp_value = 5 + 3j
 print(type(comp_value))
 print(comp_value.real)
 print(comp_value.imag)
@@ -117,12 +118,11 @@ print(comp_value.imag)
 print(abs(gpa))
 print(abs(gpa * -1))
 
-print(round(gpa))
-
 print(round(gpa, 1))
 
+print(math.pi)  # Need to import math module
 
-print(math.pi)
+print(math.pi)  # Need to import math module
 print(math.sqrt(64))
 print(math.ceil(gpa))
 print(math.floor(gpa))
