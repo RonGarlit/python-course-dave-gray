@@ -1,5 +1,5 @@
-import sys
 import random
+import sys
 from enum import Enum
 
 
@@ -10,8 +10,7 @@ class RPS(Enum):
 
 
 print("")
-playerchoice = input(
-    "Enter...\n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n")
+playerchoice = input("Enter...\n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n")
 
 player = int(playerchoice)
 
@@ -23,8 +22,8 @@ computerchoice = random.choice("123")
 computer = int(computerchoice)
 
 print("")
-print("You chose " + str(RPS(player)).replace('RPS.', '') + ".")
-print("Python chose " + str(RPS(computer)).replace('RPS.', '') + ".")
+print("You chose " + str(RPS(player)).replace("RPS.", "") + ".")
+print("Python chose " + str(RPS(computer)).replace("RPS.", "") + ".")
 print("")
 
 if player == 1 and computer == 3:
