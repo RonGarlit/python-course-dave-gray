@@ -45,7 +45,7 @@ def play_rps():
     # End of while loop for play again input
     
     if playagain.lower() == "y":
-        return play_rps()
+        return play_rps() # restart the game
     else:
         print("\n🎉🎉🎉🎉")
         print("Thank you for playing!\n")
