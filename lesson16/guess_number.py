@@ -2,7 +2,7 @@ import sys
 import random
 
 
-def guess_number(name='PlayerOne'):
+def guess_number(name="PlayerOne"):
     game_count = 0
     player_wins = 0
 
@@ -11,7 +11,8 @@ def guess_number(name='PlayerOne'):
         nonlocal player_wins
 
         playerchoice = input(
-            f"\n{name}, guess which number I'm thinking of... 1, 2, or 3.\n\n")
+            f"\n{name}, guess which number I'm thinking of... 1, 2, or 3.\n\n"
+        )
 
         if playerchoice not in ["1", "2", "3"]:
             print(f"{name}, please enter 1, 2, or 3.")
@@ -20,9 +21,7 @@ def guess_number(name='PlayerOne'):
         computerchoice = random.choice("123")
 
         print(f"\n{name}, you chose {playerchoice}.")
-        print(
-            f"I was thinking about the number {computerchoice}.\n"
-        )
+        print(f"I was thinking about the number {computerchoice}.\n")
 
         player = int(playerchoice)
 
@@ -47,7 +46,7 @@ def guess_number(name='PlayerOne'):
 
         print(f"\nGame count: {game_count}")
         print(f"\n{name}'s wins: {player_wins}")
-        print(f"\nYour winning percentage: {player_wins/game_count:.2%}")
+        print(f"\nYour winning percentage: {player_wins / game_count:.2%}")
 
         print(f"\nPlay again, {name}?")
 
@@ -79,8 +78,11 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        '-n', '--name', metavar='name',
-        required=True, help='The name of the person playing the game.'
+        "-n",
+        "--name",
+        metavar="name",
+        required=True,
+        help="The name of the person playing the game.",
     )
 
     args = parser.parse_args()

@@ -12,9 +12,9 @@ class RPS(Enum):
 playagain = True
 
 while playagain:
-
     playerchoice = input(
-        "\nEnter... \n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n")
+        "\nEnter... \n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n"
+    )
 
     player = int(playerchoice)
 
@@ -25,8 +25,8 @@ while playagain:
 
     computer = int(computerchoice)
 
-    print("\nYou chose " + str(RPS(player)).replace('RPS.', '').title() + ".")
-    print("Python chose " + str(RPS(computer)).replace('RPS.', '').title() + ".\n")
+    print("\nYou chose " + str(RPS(player)).replace("RPS.", "").title() + ".")
+    print("Python chose " + str(RPS(computer)).replace("RPS.", "").title() + ".\n")
 
     if player == 1 and computer == 3:
         print("🎉 You win!")

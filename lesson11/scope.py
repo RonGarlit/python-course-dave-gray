@@ -1,5 +1,3 @@
-
-
 name = "Dave"
 count = 1
 

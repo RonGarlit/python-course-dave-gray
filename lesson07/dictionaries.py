@@ -1,8 +1,5 @@
 # Dictionaries
-band = {
-    "vocals": "Plant",
-    "guitar": "Page"
-}
+band = {"vocals": "Plant", "guitar": "Page"}
 
 band2 = dict(vocals="Plant", guitar="Page")
 
@@ -78,18 +75,9 @@ print(band3)
 
 # Nested dictionaries
 
-member1 = {
-    "name": "Plant",
-    "instrument": "vocals"
-}
-member2 = {
-    "name": "Page",
-    "instrument": "guitar"
-}
-band = {
-    "member1": member1,
-    "member2": member2
-}
+member1 = {"name": "Plant", "instrument": "vocals"}
+member2 = {"name": "Page", "instrument": "guitar"}
+band = {"member1": member1, "member2": member2}
 print(band)
 print(band["member1"]["name"])
 

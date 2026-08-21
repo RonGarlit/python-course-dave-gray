@@ -1,6 +1,6 @@
 meaning = 42
 # print("")
-print ('')
+print("")
 
 # if meaning > 10:
 #     print('Right on!')

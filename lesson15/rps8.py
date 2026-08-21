@@ -3,7 +3,7 @@ import random
 from enum import Enum
 
 
-def rps(name='PlayerOne'):
+def rps(name="PlayerOne"):
     game_count = 0
     player_wins = 0
     python_wins = 0
@@ -19,7 +19,8 @@ def rps(name='PlayerOne'):
             SCISSORS = 3
 
         playerchoice = input(
-            f"\n{name}, please enter... \n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n")
+            f"\n{name}, please enter... \n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n"
+        )
 
         if playerchoice not in ["1", "2", "3"]:
             print(f"{name}, please enter 1, 2, or 3.")
@@ -32,9 +33,7 @@ def rps(name='PlayerOne'):
         computer = int(computerchoice)
 
         print(f"\n{name}, you chose {str(RPS(player)).replace('RPS.', '').title()}.")
-        print(
-            f"Python chose {str(RPS(computer)).replace('RPS.', '').title()}.\n"
-        )
+        print(f"Python chose {str(RPS(computer)).replace('RPS.', '').title()}.\n")
 
         def decide_winner(player, computer):
             nonlocal name
@@ -85,8 +84,6 @@ def rps(name='PlayerOne'):
     return play_rps
 
 
-
-
 if __name__ == "__main__":
     import argparse
 
@@ -95,8 +92,11 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "-n", "--name", metavar="name",
-        required=True, help="The name of the person playing the game."
+        "-n",
+        "--name",
+        metavar="name",
+        required=True,
+        help="The name of the person playing the game.",
     )
 
     args = parser.parse_args()

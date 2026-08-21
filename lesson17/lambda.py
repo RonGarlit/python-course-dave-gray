@@ -1,19 +1,30 @@
 from functools import reduce
-def squared(num): return num * num
+
+
+def squared(num):
+    return num * num
+
+
 # lambda num : num * num
 
 
 print(squared(2))
 
 
-def add_two(num): return num + 2
+def add_two(num):
+    return num + 2
+
+
 # lambda num : num + 2
 
 
 print(add_two(12))
 
 
-def sum_total(a, b): return a + b
+def sum_total(a, b):
+    return a + b
+
+
 # lambda a, b : a + b
 
 
@@ -59,7 +70,7 @@ print(total)
 print(sum(numbers, 10))
 
 
-names = ['Dave Gray', 'Sara Ito', 'John Jacob Jingleheimerschmidt']
+names = ["Dave Gray", "Sara Ito", "John Jacob Jingleheimerschmidt"]
 
 char_count = reduce(lambda acc, curr: acc + len(curr), names, 0)
 

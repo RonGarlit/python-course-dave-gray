@@ -1,6 +1,7 @@
 # Closure is a function having access to the scope of its parent
 # function after the parent function has returned.
 
+
 def parent_function(person, coins):
     # coins = 3
 

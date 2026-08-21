@@ -5,9 +5,9 @@ from enum import Enum
 
 def rps():
     # Initialize game statistics as local variables
-    game_count = 0       # Tracks total games played
-    player_wins = 0      # Tracks player victories
-    python_wins = 0      # Tracks Python (computer) victories
+    game_count = 0  # Tracks total games played
+    player_wins = 0  # Tracks player victories
+    python_wins = 0  # Tracks Python (computer) victories
 
     def play_rps():
         # Declare nonlocal variables to modify them from the outer scope
@@ -19,11 +19,13 @@ def rps():
             ROCK = 1
             PAPER = 2
             SCISSORS = 3
+
         # End of RPS Enum class definition
 
         # Get player input for their choice
         playerchoice = input(
-            "\nEnter... \n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n")
+            "\nEnter... \n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n"
+        )
 
         # Validate player input - must be 1, 2, or 3
         if playerchoice not in ["1", "2", "3"]:
@@ -39,15 +41,14 @@ def rps():
         computer = int(computerchoice)
 
         # Display both choices using Enum for readable output
-        print("\nYou chose " + str(RPS(player)).replace('RPS.', '').title() + ".")
-        print("Python chose " + str(RPS(computer)
-                                    ).replace('RPS.', '').title() + ".\n")
+        print("\nYou chose " + str(RPS(player)).replace("RPS.", "").title() + ".")
+        print("Python chose " + str(RPS(computer)).replace("RPS.", "").title() + ".\n")
 
         # Nested function to determine winner and update scores
         def decide_winner(player, computer):
             nonlocal player_wins  # Access outer scope variables
             nonlocal python_wins
-            
+
             # Game logic with score tracking
             if player == 1 and computer == 3:  # Rock beats Scissors
                 player_wins += 1
@@ -63,6 +64,7 @@ def rps():
             else:  # Computer wins
                 python_wins += 1
                 return "🐍 Python wins!"
+
         # End of decide_winner function definition
 
         # Get and display game result
@@ -87,7 +89,7 @@ def rps():
             if playagain.lower() not in ["y", "q"]:
                 continue  # Keep asking for valid input
             else:
-                break     # Valid input received, exit loop
+                break  # Valid input received, exit loop
         # End of while loop for play again input validation
 
         # Handle play again decision
@@ -100,7 +102,7 @@ def rps():
         # End of if-else block for replay decision
 
     # End of play_rps inner function definition
-    
+
     return play_rps  # Return the inner function as a closure
 
 

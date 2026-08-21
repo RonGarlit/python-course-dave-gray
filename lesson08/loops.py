@@ -39,7 +39,7 @@ names = ["Dave", "Sara", "John"]
 for x in range(5, 101, 5):
     print(x)
 else:
-    print("Glad that\'s over!")
+    print("Glad that's over!")
 
 names = ["Dave", "Sara", "John"]
 actions = ["codes", "eats", "sleeps"]
